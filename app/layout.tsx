@@ -13,7 +13,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="ar" dir="rtl" className="scroll-smooth">
       <head>
-        <Script async defer data-domain="example.com" src="https://plausible.io/js/script.js" strategy="afterInteractive" />
+        <Script async defer data-domain="https://super-raheeb.vercel.app" src="https://plausible.io/js/script.js" strategy="afterInteractive" />
       </head>
       <body className="container bg-body max-w-5xl *:select-none">
         <div className="p-5 sm:p-8 min-h-screen">

@@ -3,6 +3,7 @@ import { useRouter } from 'next/navigation'
 import toast, { Toaster } from 'react-hot-toast';
 import { PayPalScriptProvider, PayPalButtons } from '@paypal/react-paypal-js';
 
+
 export default function PayPalCheckout({ product }) {
   const router = useRouter()
   
@@ -64,30 +65,7 @@ export default function PayPalCheckout({ product }) {
           onApprove={onApprove}
         />
       </div>
-      <Toaster position="top-center" 
-      toastOptions={{
-        style: {
-          background: '#111827',
-          color: '#f9fafb',
-          borderRadius: '12px',
-          padding: '16px 24px',
-          fontSize: '15px',
-          boxShadow: '0 4px 14px rgba(0,0,0,0.3)',
-        },
-        success: {
-          iconTheme: {
-            primary: '#10b981',
-            secondary: '#d1fae5',
-          },
-        },
-        error: {
-          iconTheme: {
-            primary: '#ef4444',
-            secondary: '#fee2e2',
-          },
-        },
-      }}
-    />
+      <Toaster position="top-center" />
 
     </PayPalScriptProvider>
   );
