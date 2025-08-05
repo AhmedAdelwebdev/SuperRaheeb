@@ -52,7 +52,7 @@ export default function ProductPage() {
 
           { isDownload 
             ? <Link href={pro.downloadUrl} download className="p-4 text-lg shadow rounded-[25px_10px] border-4 border-primary hover:bg-primary-light active:scale-x-95 duration-200 text-center mt-3"> تحميل المنتج </Link>
-            : <PayPalCheckout product={pro}/> 
+            : <PayPalCheckout product={pro as object}/> 
           }
 
           <div className="pt-10 flex flex-col grow">

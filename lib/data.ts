@@ -10,7 +10,6 @@ export const products = [
   {
     id: "1",
     rating: 4.9,
-    downloads: 0,
     price: "1.00",
     show_title: false,
     img: "/book-1.jpg",
