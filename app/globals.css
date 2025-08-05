@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --color-body: #fff;
+  --color-primary: #31a8fd;
+  --color-primary-light: #c0e4fe;
+  --color-bd: var(--color-slate-300);
+  --color-text: var(--color-gray-700);
+}
+
+@font-face {
+  font-family: "Lemonada";
+  src: url("../public/Lemonada-SemiBold.ttf");
+}
+
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+body {
+  color: var(--color-text);
+  background: var(--color-body); 
+  font-family: "Lemonada", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.icon {
+  size: 28px;
+  color: var(--color-text);
+}
+
+.cate-titel {
+  @apply text-2xl w-fit px-5 mx-auto relative
+}
+.cate-titel::after {
+  content: '';
+  right: 50%;
+  height: 3px;
+  width: 120px;
+  bottom: -20px;
+  translate: 50%;
+  position: absolute;
+  border-radius: 5px;
+  background: var(--color-primary);
+}
+
+
